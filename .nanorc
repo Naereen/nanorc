@@ -1,0 +1,439 @@
+#-------- General Options ----------
+# (c) Lilian Besson 2015
+# http://perso.crans.org/besson
+# the reference web page for this is 
+#  http://www.nano-editor.org/dist/v2.0/nano.html#Nanorc-Files
+
+unset autoindent
+set nowrap
+set matchbrackets "(<[{)>]}"
+## set brackets "\"')]}"
+## unset mouse
+set tabsize 8
+set softwrap
+set suspend
+set const
+set smooth
+set rebindkeypad
+set boldtext
+set multibuffer
+set preserve
+set backup
+set historylog
+set quickblank
+set wordbounds
+## set undo  # (still experimental/buggy on nano 2.2.x)
+set nonewlines
+set smooth
+
+#| File          : ~/.nanorc
+#| Last modified : 2012-02-28
+#| Project page  : https://github.com/fabi1cazenave/gnupad
+#| Author        : Fabien Cazenave
+#| Licence       : WTFPL
+#|
+#| This configuration file should bring a Notepad-like behavior to Nano.
+#|
+#| Not implemented yet:
+#|   * Ctrlt+arrows caret movements
+#|   * Shift+arrows selection mode
+#|     (=> use the Emacs-like Ctrl+Space marker instead)
+#|   * Shift+[F3] (= previous search occurrences)
+#|
+#| References:
+#|   * man nanorc
+#|   * /usr/share/doc/nano/examples/nanorc.sample.gz (or equivalent)
+#|
+
+## cut/copy/paste
+# bind ^X cut          main
+# bind ^C copytext     main
+# bind ^V uncut        main
+
+## undo/redo (still experimental/buggy on nano 2.2.x)
+# set undo
+# bind ^Z undo         all
+# bind ^Y redo         all
+
+## find/replace (shift+F3 still missing)
+# bind ^F whereis      main
+# bind ^H replace      main
+# bind ^G searchagain  main
+# bind F3 searchagain  main
+
+## save/quit/help (requires to ignore XON/XOFF keys)
+# unset preserve
+# bind ^S writeout     all
+# bind ^Q exit         all
+bind F1 help         all
+
+#------- New Syntax Highlight ------------
+
+## Nanorc
+include "~/.nano/nanorc.nanorc"
+
+## C/C++
+include "~/.nano/c.nanorc"
+
+## CUDA
+include "~/.nano/cu.nanorc"
+
+## OCaml & Caml Light
+include "~/.nano/caml.nanorc"
+
+## Fortran
+include "~/.nano/fortran.nanorc"
+
+## HTML
+include "~/.nano/html.nanorc"
+
+## JS
+include "~/.nano/js.nanorc"
+
+## Patch files
+include "~/.nano/patch.nanorc"
+
+## Manpages
+include "~/.nano/man.nanorc"
+
+## Perl
+include "~/.nano/perl.nanorc"
+
+## Python
+include "~/.nano/python.nanorc"
+
+## reST
+include "~/.nano/reST.nanorc"
+
+## Ruby
+include "~/.nano/ruby.nanorc"
+
+## Bourne shell scripts
+include "~/.nano/sh.nanorc"
+
+## makefile .am
+include "~/.nano/gentoo.nanorc"
+
+## TeX
+include "~/.nano/tex.nanorc"
+
+## CSS
+include "~/.nano/css.nanorc"
+
+## php
+include "~/.nano/php.nanorc"
+
+## XML
+include "~/.nano/xml.nanorc"
+
+## Lua
+include "~/.nano/lua.nanorc"
+
+## Conkyrc
+include "~/.nano/conky.nanorc"
+
+## STRIPS
+include "~/.nano/strips.nanorc"
+
+## Mutt mails
+include "~/.nano/mutt.nanorc"
+
+## Coloration for apache2
+include "~/.nano/apache2.nanorc"
+
+## Coloration for apacheconf
+include "~/.nano/apacheconf.nanorc"
+
+## Coloration for asm
+include "~/.nano/asm.nanorc"
+
+## Coloration for awk
+include "~/.nano/awk.nanorc"
+
+## Coloration for caml
+include "~/.nano/caml.nanorc"
+
+## Coloration for c-file
+include "~/.nano/c-file.nanorc"
+
+## Coloration for changelog
+##include "~/.nano/changelog.nanorc"
+
+## Coloration for changelogs
+include "~/.nano/changelogs.nanorc"
+
+## Coloration for clike
+include "~/.nano/clike.nanorc"
+
+## Coloration for cmake
+include "~/.nano/cmake.nanorc"
+
+## Coloration for c
+include "~/.nano/c.nanorc"
+
+## Coloration for config2
+##include "~/.nano/config2.nanorc"
+
+## Coloration for config3
+##include "~/.nano/config3.nanorc"
+
+## Coloration for configfiles
+include "~/.nano/configfiles.nanorc"
+
+## Coloration for config
+##include "~/.nano/config.nanorc"
+
+## Coloration for conf
+include "~/.nano/conf.nanorc"
+
+## Coloration for conky
+include "~/.nano/conky.nanorc"
+
+## Coloration for css
+include "~/.nano/css.nanorc"
+
+## Coloration for cu
+include "~/.nano/cu.nanorc"
+
+## Coloration for cython
+include "~/.nano/cython.nanorc"
+
+## Coloration for debian
+include "~/.nano/debian.nanorc"
+
+## Coloration for default
+include "~/.nano/default.nanorc"
+
+## Coloration for delphi
+include "~/.nano/delphi.nanorc"
+
+## Coloration for desc
+include "~/.nano/desc.nanorc"
+
+## Coloration for dotemacs
+include "~/.nano/dotemacs.nanorc"
+
+## Coloration for dummy
+include "~/.nano/dummy.nanorc"
+
+## Coloration for ekghistory
+include "~/.nano/ekghistory.nanorc"
+
+## Coloration for etc-stuff
+include "~/.nano/etc-stuff.nanorc"
+
+## Coloration for etcxml
+include "~/.nano/etcxml.nanorc"
+
+## Coloration for fortran
+include "~/.nano/fortran.nanorc"
+
+## Coloration for gentoo
+include "~/.nano/gentoo.nanorc"
+
+## Coloration for groff
+include "~/.nano/groff.nanorc"
+
+## Coloration for haml
+include "~/.nano/haml.nanorc"
+
+## Coloration for havp
+include "~/.nano/havp.nanorc"
+
+## Coloration for histoire
+include "~/.nano/histoire.nanorc"
+
+## Coloration for html
+include "~/.nano/html.nanorc"
+
+## Coloration for info
+include "~/.nano/info.nanorc"
+
+## Coloration for initng
+include "~/.nano/initng.nanorc"
+
+## Coloration for initscript
+include "~/.nano/initscript.nanorc"
+
+## Coloration for java
+include "~/.nano/java.nanorc"
+
+## Coloration for js
+include "~/.nano/js.nanorc"
+
+## Coloration for log-stuff
+include "~/.nano/log-stuff.nanorc"
+
+## Coloration for lua
+include "~/.nano/lua.nanorc"
+
+## Coloration for maincf
+include "~/.nano/maincf.nanorc"
+
+## Coloration for makefile
+include "~/.nano/makefile.nanorc"
+
+## Coloration for man
+include "~/.nano/man.nanorc"
+
+## Coloration for markdown
+include "~/.nano/markdown.nanorc"
+
+## Coloration for mgp
+include "~/.nano/mgp.nanorc"
+
+## Coloration for mimetype
+include "~/.nano/mimetype.nanorc"
+
+## Coloration for mutt
+include "~/.nano/mutt.nanorc"
+
+## Coloration for named
+include "~/.nano/named.nanorc"
+
+## Coloration for nanorc
+include "~/.nano/nanorc.nanorc"
+
+## Coloration for nscd
+include "~/.nano/nscd.nanorc"
+
+## Coloration for objc
+include "~/.nano/objc.nanorc"
+
+## Coloration for ocaml
+## include "~/.nano/ocaml.nanorc"
+
+## Coloration for others
+include "~/.nano/others.nanorc"
+
+## Coloration for paludis
+include "~/.nano/paludis.nanorc"
+
+## Coloration for passwd
+include "~/.nano/passwd.nanorc"
+
+## Coloration for patch
+include "~/.nano/patch.nanorc"
+
+## Coloration for perl
+include "~/.nano/perl.nanorc"
+
+## Coloration for php2
+include "~/.nano/php2.nanorc"
+
+## Coloration for php
+##include "~/.nano/php.nanorc"
+
+## Coloration for pkgbuild
+include "~/.nano/pkgbuild.nanorc"
+
+## Coloration for po
+include "~/.nano/po.nanorc"
+
+## Coloration for postgresql
+include "~/.nano/postgresql.nanorc"
+
+## Coloration for pov
+include "~/.nano/pov.nanorc"
+
+## Coloration for privoxy
+include "~/.nano/privoxy.nanorc"
+
+## Coloration for profile
+include "~/.nano/profile.nanorc"
+
+## Coloration for python
+include "~/.nano/python.nanorc"
+
+## Coloration for rcfiles
+##include "~/.nano/rcfiles.nanorc"
+
+## Coloration for rcfiles-new
+include "~/.nano/rcfiles-new.nanorc"
+
+## Coloration for reST
+include "~/.nano/reST.nanorc"
+
+## Coloration for rsync
+include "~/.nano/rsync.nanorc"
+
+## Coloration for ruby
+include "~/.nano/ruby.nanorc"
+
+## Coloration for shlike
+include "~/.nano/shlike.nanorc"
+
+## Coloration for sh
+include "~/.nano/sh.nanorc"
+
+## Coloration for softcam
+include "~/.nano/softcam.nanorc"
+
+## Coloration for sources_list
+## include "~/.nano/sources_list.nanorc"
+
+## Coloration for strips
+include "~/.nano/strips.nanorc"
+
+## Coloration for tab
+include "~/.nano/tab.nanorc"
+
+## Coloration for tcl
+include "~/.nano/tcl.nanorc"
+
+## Coloration for tex
+include "~/.nano/tex.nanorc"
+
+## Coloration for urls
+include "~/.nano/urls.nanorc"
+
+## Coloration for vhost
+include "~/.nano/vhost.nanorc"
+
+## Coloration for xdefaults
+include "~/.nano/xdefaults.nanorc"
+
+## Coloration for xml
+include "~/.nano/xml.nanorc"
+
+## Coloration for xorg
+include "~/.nano/xorg.nanorc"
+
+## Coloration for zshrc
+include "~/.nano/zshrc.nanorc"
+
+## Coloration for nanorc
+include "~/.nano/nanorc.nanorc"
+
+## Coloration for Julia
+include "~/.nano/julia.nanorc"
+
+## Bonus: syntax highlighting
+include "/usr/share/nano/asm.nanorc"
+include "/usr/share/nano/awk.nanorc"
+include "/usr/share/nano/cmake.nanorc"
+include "/usr/share/nano/c.nanorc"
+include "/usr/share/nano/css.nanorc"
+include "/usr/share/nano/debian.nanorc"
+include "/usr/share/nano/fortran.nanorc"
+include "/usr/share/nano/gentoo.nanorc"
+include "/usr/share/nano/groff.nanorc"
+include "/usr/share/nano/html.nanorc"
+include "/usr/share/nano/java.nanorc"
+include "/usr/share/nano/makefile.nanorc"
+include "/usr/share/nano/man.nanorc"
+include "/usr/share/nano/mgp.nanorc"
+include "/usr/share/nano/mutt.nanorc"
+include "/usr/share/nano/nanorc.nanorc"
+include "/usr/share/nano/objc.nanorc"
+include "/usr/share/nano/ocaml.nanorc"
+include "/usr/share/nano/patch.nanorc"
+include "/usr/share/nano/perl.nanorc"
+include "/usr/share/nano/php.nanorc"
+include "/usr/share/nano/pov.nanorc"
+include "/usr/share/nano/python.nanorc"
+include "/usr/share/nano/ruby.nanorc"
+include "/usr/share/nano/sh.nanorc"
+include "/usr/share/nano/tcl.nanorc"
+include "/usr/share/nano/tex.nanorc"
+include "/usr/share/nano/xml.nanorc"
