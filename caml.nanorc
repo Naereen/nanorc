@@ -1,0 +1,51 @@
+## Caml, ML, F, and OCaml syntax coloration, for Nano
+## (C) 05/2012 Lilian Besson (lilian DOT besson AT normale DOT fr)
+## Last version : http://besson.qc.to/NanoSyntax/caml.nanorc
+
+syntax "ocaml" "\.mli?$" "rlwrap"
+
+##possible errors : open "[( that are not closed yet
+# color brightwhite "(\(|\"|\[)(\\.|[^(\)|\"|\])*$" 
+# color white "\([^*](.*|[^)])*\)" 
+# color green "\[(.*|[^]])*\]"
+
+#uid
+color red "\<[A-Z][0-9a-z_]{2,}\>"
+#command
+color brightred,black start="^#" end=";;"
+
+##keywords
+color brightblue "\<(let|val|method|in|and|rec|private|virtual|constraint)\>"
+color green,black "\<(if|then|else)\>"
+color blue "\<(begin|end|object|struct|sig|for|while|do|done|to|downto)\>"
+color yellow "\<(as|when|of)\>"
+color red "\<(int|float|bool|char|string)\>"
+color brightblue "\<(new|ref|mutable|lazy|assert|raise|)\>"
+color brightgreen "\|"
+color brightblue "\<(include|inherit|initializer)\>"
+
+color blue "\<(fun|function|functor|match|try|with)\>"
+color brightblue "\;(\;)?"
+
+color brightred "\<(type|open|class|module|exception|external)\>"
+
+##numbers and strings 
+color yellow "[[:space:]][0-9][0-9]*(\.)?"
+color green "\[\]"
+color brightgreen "\<(true|false)\>"
+color magenta "<[^= ]*>" ""(\\.|[^\"])*""
+color magenta start=""(\\.|[^\"])*\\ *$" end="^(\\.|[^\"])*""
+
+
+##relations and operators
+color brightyellow "(\=|[ ]*>[ ]*|[ ]*<[ ]*|\:\=)"
+color brightgreen "\:\:" 
+color brightyellow "(\+|\*|\/|-)(\.)?"
+
+color brightgreen "\->"
+
+##Comments
+# color brightcyan "\(\*(\\.|\*|\(|[^\*]\)|[^(\*\))])*$"
+# color cyan "\(\*.*\*\)"
+color black,white start="\(\*" end="\*\)"
+color white,green start="\(\*\*" end="\*\)"

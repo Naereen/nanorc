@@ -1,0 +1,40 @@
+## (c) Lilian Besson, 06/2013
+## For the .strips files, describing STRIPS instance.
+## More details : https://bitbucket.org/lbesson/stageM1/
+
+syntax "strips" "\.strips$"
+
+# Comments
+color brightblue "//.*$"
+
+# Initial State
+icolor yellow "initial.*:.*$"
+
+# Goal State
+icolor brightyellow "goal.*:.*$"
+
+# Actions
+icolor brightgreen "action.*:.*$"
+
+# Preconditions
+icolor yellow "pre.*:"
+
+# Postconditions
+icolor brightyellow "post.*:"
+
+# Predicate
+color brightwhite "[A-Z][A-Za-z]*\("
+
+# !Predicate
+color brightred "![A-Z][A-Za-z]*\("
+
+# Parenthesizes
+#color brightred start="\(" end="\)"
+color red "\("
+color red "\)"
+## color brightred "\([^\)].*$"
+
+color white ", "
+
+# Comments
+color brightblue "//.*$"

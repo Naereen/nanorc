@@ -1,0 +1,19 @@
+## Coloration syntaxique pour les devoirs d'Histoire
+##  très limité !
+## Auteur: Lilian Besson
+
+## On associe ce fichier à l'extension de fichier .histoire
+## (qui n'est pas celle d'un vrai type de fichier, mais ce n'est pas grave)
+syntax "histoire" "\.histoire$"
+
+## Maintenant, si ce fichier 'histoire.nanorc' est chargé dans le '~/.nanorc'
+## par la ligne :
+## include "~/.nano/histoire.nanorc"
+## cela permet d'éditer les fichiers truc.histoire comme des devoir d'Histoire
+
+color brightgreen "[0-9][0-9]*"
+color brightgreen "-[0-9][0-9]*"
+## On définit les dates comme des nombres entre -9999 et 9999
+
+color brightblue "[A-Z][A-Za-z]*"
+## On définit les noms propres comme des mots commençant par une majuscule
