@@ -1,8 +1,11 @@
 #-------- General Options ----------
 # (c) Lilian Besson 2015
 # http://perso.crans.org/besson
-# the reference web page for this is 
-#  http://www.nano-editor.org/dist/v2.0/nano.html#Nanorc-Files
+# the reference web page for this is
+# http://www.nano-editor.org/dist/v2.0/nano.html#Nanorc-Files
+#
+# MIT License on https://github.com/Naereen/nanorc
+#
 
 unset autoindent
 set nowrap
