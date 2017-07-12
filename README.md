@@ -1,8 +1,8 @@
-# Syntax highlighting files for GNU/Nano [nanorc](https://nanorc/)
+# Syntax highlighting files for the [GNU/Nano editor](https://nano-editor.org/)
 
 This repository contains some manually written syntax highlighting files for the [GNU/Nano editor](https://nano-editor.org/).
 
-Some files also come from the default Nanu installation.
+Some files also come from the default Nano installation.
 
 ## Install with git :wrench:
 Be sure you don't have a directory `~/.nano` and no file `~/.nanorc`.
@@ -34,6 +34,11 @@ include "~/.nano/nanorc.nanorc"
 ## :scroll: License ? [![GitHub license](https://img.shields.io/github/license/Naereen/nanorc.svg)](https://github.com/Naereen/nanorc/blob/master/LICENSE)
 [MIT Licensed](https://lbesson.mit-license.org/) (file [LICENSE](LICENSE)).
 © [Lilian Besson](https://GitHub.com/Naereen), 2017.
+
+## Remark
+I am no longer an intense user of GNU/Nano so most of the files date from 2012, 2013 and 2014.
+But I still use it, and I test all of them on each new release of the editor, they still work well as fuck.
+Enjoy!
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/nanorc/graphs/commit-activity)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
