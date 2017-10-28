@@ -60,7 +60,7 @@ color white "^ *([/\+\-]{1,2}[a-zA-Z0-9][[:blank:]]?([[:alnum:]]|_)*[,=]*([[:aln
 # tables
 color white,red "\+--(-+\+)*-+"
 color white "\+--(-+\+)*-+\+"
-color brightwhite,red, "\+==(=+\+)*=+"
+color brightwhite,red "\+==(=+\+)*=+"
 color brightwhite "\+==(=+\+)*=+\+"
 color brightwhite "^ *==+([[:blank:]]+==+)+"
 # special caracter '|' : for tables and for line blocks
