@@ -13,7 +13,7 @@ color brightyellow "\<(try|throw|catch|operator|new|delete)\>"
 color magenta "\<(goto|continue|break|return)\>"
 
 ## Specific CUDA stuffs
-color red "\<(__host__|__global__|__device__|threadIdx|blockIdx|blockDim|cudaMalloc|cudaMemcpy|cudaMemcpyHostToDevice|cudamemcpyDeviceToHost|dim3|grids|threads|cudaFree)\>"
+color red "\<(__host__|__global__|__device__|threadIdx|blockIdx|blockDim|cudaMalloc|cudaMemcpy|cudaMemcpyHostToDevice|cudaMemcpyDeviceToHost|dim3|grids|threads|cudaFree)\>"
 ## threads and blocks kernel call
 ## color cyan "<<<.*>>>"
 color cyan start="<<<" end=">>>"
