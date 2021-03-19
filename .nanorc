@@ -8,15 +8,15 @@
 #
 
 unset autoindent
-set nowrap
+#set nowrap
 set matchbrackets "(<[{)>]}"
 ## set brackets "\"')]}"
 ## unset mouse
 set tabsize 8
 set softwrap
-set suspend
+set suspendable
 set const
-set smooth
+#set smooth
 set rebindkeypad
 set boldtext
 set multibuffer
