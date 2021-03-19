@@ -27,7 +27,6 @@ set quickblank
 set wordbounds
 ## set undo  # (still experimental/buggy on nano 2.2.x)
 set nonewlines
-set smooth
 
 #| File          : ~/.nanorc
 #| Last modified : 2012-02-28
