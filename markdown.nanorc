@@ -77,7 +77,7 @@ color brightyellow "`[^`]*`"
 color brightred start="!\[" end="\]"
 color white start="\[" end="\]"
 # Lists
-color yellow "^( )*(\*|\+|\-|[0-9]+\.) "
+color brightyellow "^( )*(\*|\+|\-|[0-9]+\.) "
 # <hr>
 color ,red "^\* \* \*.*$"
 color ,red "^- - -.*$"
