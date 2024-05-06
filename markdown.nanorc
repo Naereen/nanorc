@@ -11,6 +11,7 @@ syntax "markdown" "\.md$" "\.markdown$"
 # Numbers
 color white "-?[0-9\.][0-9\._,]*([eE]-?)?[0-9\._,]*"
 # code block
+color brightgreen,black "DONE"
 color brightred,black "(FIXME|TODO|NEW|XXX|HOWTO|DEBUG|WARNING|PEP)"
 # wrong links (empty)
 color white,red "[a-z][a-z]+://[^([[:alnum:]]|[\]\[])]*"
@@ -57,6 +58,10 @@ color brightblue "^====(=*)"
 color brightblue "^----(-*)"
 # Hash headers
 color brightcyan "^#.*"
+color brightred "^##.*"
+color brightmagenta "^###.*"
+color brightyellow "^####.*"
+color brightblue "^#####.*"
 # Linkified URLs (and inline html tags)
 color brightmagenta start="<" end=">"
 # Links
@@ -76,6 +81,6 @@ color yellow "^( )*(\*|\+|\-|[0-9]+\.) "
 # <hr>
 color ,red "^\* \* \*.*$"
 color ,red "^- - -.*$"
-color ,red "^-----.*$"
+color ,yellow "^-----.*$"
 color ,red "^----.*$"
 color ,red "^---.*$"
